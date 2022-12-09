@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 400px;
+  background-image: url(../../public/img/gazo.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;     /*上下中央揃え*/
+  width: 95%;
+  height: 95vh;
+  font-family: "MS Pゴシック", sans-serif;
+}
+.search_container{
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  display: block;
+  /* padding: 3px 10px; */
+  border-radius: 20px;
+  height: 3em;
+  width: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+  width: 100%;
+  height: 3.5em;
+  padding-left: 20px;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  background: none;
+  color: #3879D9;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  right: 0;
+  top: -5px;
+  outline : none;
+}
+h1{
+    color: rgb(65, 65, 65);
+    font-size: 4em;
+    text-align: center;
+}
+@media screen and (max-width: 414px) {
+  /* スマホ用CSS（PCにも効く） */
+  
+  h2{
+    color: rgb(37, 37, 37);
+  }
+}
+@media screen and (min-width: 414px) {
+
+  /* PC専用CSS */
+  h2{
+    font-size: 3.5em;
+    color: rgb(65, 65, 65);
+  }
+  
+}
+
+
+
+  
+
