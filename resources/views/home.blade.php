@@ -10,7 +10,7 @@
 <body>
     <div id="top">
         <h1>AIP</h1>
-        <h2>AIが生み出した写真や絵を検索</h2>
+        <h2>AIが生み出した写真や絵を検索!</h2>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <form method="POST" action="{{ route('look') }}" enctype="multipart/form-data" class="search_container">
         @csrf
