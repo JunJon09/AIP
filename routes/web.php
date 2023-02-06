@@ -22,10 +22,8 @@ Route::get('/', function () {
 Route::get('/look', function () {
     return view('home');
 });
-Route::get('/ImgPost', function () {
-    return view('ImgPost');
-});
-Route::post('/ImgPost', [ImgPostController::class, 'index'])->name('ImgPost');
+
+Route::get('/ImgPost/{keyword}/{name}/{path}', [ImgPostController::class, 'index'])->name('ImgPost');
 
 Route::post('/look', [ViewController::class, 'index'])->name('look');
 Route::get('/getImg', [ViewController::class, 'fetch'])->name('tweet');

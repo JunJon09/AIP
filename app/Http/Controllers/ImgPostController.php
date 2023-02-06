@@ -10,10 +10,7 @@ use App\Models\ImgType;
 
 class ImgPostController extends Controller
 {
-    public function index(Request $request){
-        $keywords = $request->key;
-        $name = $request->name;
-        $path = $request->path;
+    public function index($keywords, $name, $path){
         $keyword = explode("-",$keywords);
         $DB_Img = new Img();
         $DB_Img->path = $path;
