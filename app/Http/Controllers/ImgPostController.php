@@ -63,10 +63,8 @@ class ImgPostController extends Controller
                 $DB_Type->count = 1;
                 $DB_Type->save();
                 array_push($my_type, $DB_Type->id);
-                if ($i == 0){ #初期値設定
-                    $kind = $keyword[$i];
-                    $kind_count = 1;
-                }
+                $kind = $keyword[$i];
+                $kind_count = 1;
             }else{
                 $key->count += 1;
                 $key->save();
